@@ -6,7 +6,8 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.sidenav {
+.side {
+  margin-top: 300px;
   width: 130px;
   position: fixed;
   z-index: 1;
@@ -17,7 +18,7 @@ body {
   padding: 8px 0;
 }
 
-.sidenav a {
+.side a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -25,7 +26,7 @@ body {
   display: block;
 }
 
-.sidenav a:hover {
+.side a:hover {
   color: #064579;
 }
 
@@ -44,12 +45,9 @@ body {
 
 
 <body>
-  <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
-    
+  <div class="side">
+
+
    <form action="/action_page.php">
   <input type="radio" id="Central" name="region" value="Central">
   <label for="Central">Central</label><br>
@@ -59,7 +57,7 @@ body {
   <label for="East">East</label>
   </form>
    </br>
-  
+
 </div>
 
 
