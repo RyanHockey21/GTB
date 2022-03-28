@@ -10,8 +10,11 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: black;
-}
 
+}
+.main {
+  color: white;
+}
 .side {
   margin-top: 50px;
   width: 400px;
@@ -20,7 +23,9 @@ body {
   z-index: 1;
   top: 20px;
   left: 10px;
-  background: #eee;
+  color: white;
+  background: black;
+  font-size: 20px;
   overflow-x: hidden;
   padding: 8px;
 }
@@ -56,12 +61,12 @@ body {
 
 
    <form action="/action_page.php">
-   <input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1RcW0zxSCSDfT2I7dmbxPQ40AKCV34sUk&ehbc=2E312F')"/>Centretown (21.28%)<br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1n9nPcfyrpTXzHyETy2vs9BA38KyyBYI6&ehbc=2E312F')"/>Sandy_Hill (11.73%)<br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1OOxQgPP7psjhHvZYj1Rd3zVdW9pe11Ec&ehbc=2E312F')"/>Glebe - Dows lake (6.87%)<br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1ypYxq9X634JIjgQNWPw8SD2ZxqNz0F_Y&ehbc=2E312F')"/>Byward market (4.2%)<br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1pYNQ6SjK4GVzJxbXFMz9-64n_PCJ6tew&ehbc=2E312F')"/>West Centretown (3.22%)<br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&ehbc=2E312F')"/>All<br>
+   <input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1RcW0zxSCSDfT2I7dmbxPQ40AKCV34sUk&ehbc=2E312F')"/>Centretown (21.28%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1n9nPcfyrpTXzHyETy2vs9BA38KyyBYI6&ehbc=2E312F')"/>Sandy_Hill (11.73%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1OOxQgPP7psjhHvZYj1Rd3zVdW9pe11Ec&ehbc=2E312F')"/>Glebe - Dows lake (6.87%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1ypYxq9X634JIjgQNWPw8SD2ZxqNz0F_Y&ehbc=2E312F')"/>Byward market (4.2%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1pYNQ6SjK4GVzJxbXFMz9-64n_PCJ6tew&ehbc=2E312F')"/>West Centretown (3.22%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&ehbc=2E312F')"/>All<br><br><br>
 
   </form>
    </br>
@@ -74,7 +79,7 @@ body {
 <h1 style="color:white;">Grand Theft Bike</h1>
   <iframe id="myframe" src="https://www.google.com/maps/d/embed?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&ehbc=2E312F" width="1000" height="800"></iframe> </br>
   <a href="https://www.google.com/maps/d/edit?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&usp=sharing">The link to the map</a>
-<p style="color:white;">By browsing the map, you will get to know the top 5 neighbourhoods where most bike thefts happened in 2020.</p>
+<p>By browsing the map, you will get to know the top 5 neighbourhoods where most bike thefts happened in 2020.</p>
 
 
 </div>
