@@ -9,6 +9,10 @@
         document.getElementById('myframe').src = loc;
     }
 
+    function TableauTime(loc){
+      document.getElementById('mytime').src = loc;
+    }
+
 
 </script>
 <head>
@@ -16,18 +20,18 @@
 </head>
 <body>
   <div class="side">
-<h style="font-size: 30px;">Neighbourhoods selecter</h><br><br>
 
-<form action="/action_page.php">
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1RcW0zxSCSDfT2I7dmbxPQ40AKCV34sUk&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/CentreTownTraffic/Sheet1?:showVizHome=no&:embed=true')"/>Centretown (21.28%)<br><br><br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1n9nPcfyrpTXzHyETy2vs9BA38KyyBYI6&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/SandyHillTraffic/Sheet1?:showVizHome=no&:embed=true')"/>Sandy_Hill (11.73%)<br><br><br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1OOxQgPP7psjhHvZYj1Rd3zVdW9pe11Ec&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/GlebeStops/Sheet1?:showVizHome=no&:embed=true')"/>Glebe - Dows lake (6.87%)<br><br><br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1ypYxq9X634JIjgQNWPw8SD2ZxqNz0F_Y&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/BikeTheftsTraffic/Sheet1?:showVizHome=no&:embed=true')"/>Byward market (4.2%)<br><br><br>
-<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1pYNQ6SjK4GVzJxbXFMz9-64n_PCJ6tew&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/WestCentreLocation/Sheet1?:showVizHome=no&:embed=true')"/>West Centretown (3.22%)<br><br><br>
-<input type="radio" name="region" value="type" checked onclick = "go('https://www.google.com/maps/d/embed?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/TotalYear/Sheet1?:showVizHome=no&:embed=true')"/>All<br><br><br>
+
+   <form action="/action_page.php">
+   <input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1RcW0zxSCSDfT2I7dmbxPQ40AKCV34sUk&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/CentreTownTraffic/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/CentretownBikeThefts/Sheet1?:showVizHome=no&:embed=true');"/>Centretown (21.28%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1n9nPcfyrpTXzHyETy2vs9BA38KyyBYI6&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/SandyHillTraffic/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/SandyhillBikeThefts/Sheet1?:showVizHome=no&:embed=true');"/>Sandy_Hill (11.73%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1OOxQgPP7psjhHvZYj1Rd3zVdW9pe11Ec&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/GlebeStops/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/GlebeBikeThefts/Sheet1?:showVizHome=no&:embed=true');"/>Glebe - Dows lake (6.87%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1ypYxq9X634JIjgQNWPw8SD2ZxqNz0F_Y&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/BikeTheftsTraffic/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/BywardMarketTheft/Sheet1?:showVizHome=no&:embed=true');"/>Byward market (4.2%)<br><br><br>
+<input type="radio" name="region" value="type" onclick = "go('https://www.google.com/maps/d/embed?mid=1pYNQ6SjK4GVzJxbXFMz9-64n_PCJ6tew&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/WestCentreLocation/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/WestCentretownBikethefts/Sheet1?:showVizHome=no&:embed=true');"/>West Centretown (3.22%)<br><br><br>
+<input type="radio" name="region" value="type" checked onclick = "go('https://www.google.com/maps/d/embed?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&ehbc=2E312F'); TableauGo('https://public.tableau.com/views/TotalYear/Sheet1?:showVizHome=no&:embed=true'); TableauTime('https://public.tableau.com/views/AllBikeThefts/Sheet1?:showVizHome=no&:embed=true');"/>All<br><br><br>
 
   </form>
-    <iframe id="myframe" src="https://public.tableau.com/views/TotalYear/Sheet1?:showVizHome=no&:embed=true" width="300" height="400"></iframe>
+    <iframe id="myframe" src="https://public.tableau.com/views/TotalYear/Sheet1?:showVizHome=no&:embed=true" width="300" height="300"></iframe>
    </br>
 </div>
 
@@ -38,6 +42,7 @@
 
   <a href="https://www.google.com/maps/d/edit?mid=1N9aKORIPn-6jwPxjn3kUVnOuQpMN-CAG&usp=sharing">The link to the map</a>
   <p>By browsing the map, you will get to know the top 5 neighbourhoods where most bike thefts happened in 2020.</p>
+  <iframe id="mytime" src="https://public.tableau.com/views/AllBikeThefts/Sheet1?::showVizHome=no&:embed=true" height="500px" width="100%"></iframe>
   <h1 style="color:white;">The time where most bikes are stolen in different regions.</h1>
 </div>
 </body>
